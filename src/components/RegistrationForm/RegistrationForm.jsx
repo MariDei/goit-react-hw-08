@@ -32,17 +32,32 @@ const RegistrationForm = () => {
       <Form className={css.form} autoComplete="off">
         <label className={css.label}>
           Username
-          <Field className={css.input} type="text" name="name" />
+          <Field
+            className={css.input}
+            type="text"
+            name="name"
+            placeholder="Enter your username"
+          />
           <ErrorMessage name="name" component="span" />
         </label>
         <label className={css.label}>
           Email
-          <Field className={css.input} type="email" name="email" />
+          <Field
+            className={css.input}
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+          />
           <ErrorMessage name="email" component="span" />
         </label>
         <label className={css.label}>
           Password
-          <Field className={css.input} type="password" name="password" />
+          <Field
+            className={css.input}
+            type="password"
+            name="password"
+            placeholder="Enter your password"
+          />
           <ErrorMessage name="password" component="span" />
         </label>
         <div>

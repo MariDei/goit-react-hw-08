@@ -1,5 +1,5 @@
 :root {
-  font-family: 'Montserrat', monospace;
+  font-family: 'Montserrat Alternates', sans-serif;
   line-height: 1.5;
   font-weight: 500;
 
@@ -11,12 +11,8 @@
 
 body {
   color: azure;
-  background: linear-gradient(
-    178.6deg,
-    rgb(20, 36, 50) 11.8%,
-    rgb(124, 143, 161) 83.8%
-  );
-  min-height: 75vh;
+  background: #424874;
+  min-height: 100vh;
 }
 
 h1,
@@ -37,8 +33,8 @@ ol {
 }
 
 img {
-  width: 100%;
-  height: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 a {
@@ -48,9 +44,4 @@ a {
 
 button {
   font-family: inherit;
-}
-
-img {
-  display: block;
-  max-width: 100%;
 }

@@ -1,19 +1,39 @@
 .wrapper {
-  padding: 10px;
+  padding: 0 20px;
   display: flex;
   align-items: center;
-  gap: 10px;
-  color: azure;
+  justify-content: space-between;
+  gap: 4px;
+  background-color: inherit;
+  border-bottom: none;
+  box-shadow: none;
 }
 
 .username {
-  font-weight: 900;
+  font-size: 18px;
+  font-weight: 700;
+  color: green;
+}
+
+@media screen and (min-width: 768px) {
+  .username {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .username {
+    font-size: 26px;
+  }
 }
 
 .btn {
-  margin: 10px auto;
+  margin: 0 10px;
   padding: 10px;
-  font-size: 22px;
+  display: block;
+  flex-direction: row;
+  align-items: center;
+  font-size: 20px;
   font-weight: 700;
   background-color: gold;
   color: rgb(74, 72, 72);
@@ -26,7 +46,7 @@
 .btn:focus,
 .btn:hover {
   color: green;
-  background-color: inherit;
+  background-color: azure;
   border: 2px solid green;
   box-shadow: 2px 2px 2px gray;
 }

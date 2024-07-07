@@ -5,7 +5,23 @@
 .link {
   padding: 0 10px;
   display: inline-block;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   color: azure;
+}
+
+.isActive {
+  color: gold;
+}
+
+@media screen and (min-width: 768px) {
+  .link {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .link {
+    font-size: 26px;
+  }
 }
