@@ -1,8 +1,10 @@
 .item {
   width: 300px;
-  padding: 10px;
+  margin: 0;
+  padding: 4px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 6px;
   font-size: 18px;
   color: azure;
@@ -12,6 +14,7 @@
 }
 
 .wrapper {
+  margin: 0 2px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -36,8 +39,8 @@
 
 .btn {
   position: absolute;
-  margin: 15px 220px 15px;
-  padding: 10px;
+  margin: 15px 210px 15px;
+  padding: 8px;
   font-size: 20px;
   font-weight: 700;
   background-color: gold;
