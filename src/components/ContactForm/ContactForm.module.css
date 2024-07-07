@@ -1,6 +1,6 @@
 .wrapper {
   width: 390px;
-  margin: 0 auto;
+  margin: 0 4px 0 0;
   padding: 4px;
   display: flex;
   flex-direction: column;
@@ -36,8 +36,8 @@ span {
   padding: 10px;
   font-size: 22px;
   font-weight: 700;
-  background-color: rgb(57, 167, 235);
-  color: rgb(17, 16, 16);
+  background-color: gold;
+  color: rgb(74, 72, 72);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -46,7 +46,8 @@ span {
 
 .btn:focus,
 .btn:hover {
-  color: rgb(57, 167, 235);
-  background-color: azure;
+  color: green;
+  background-color: inherit;
+  border: 2px solid green;
   box-shadow: 2px 2px 2px gray;
 }

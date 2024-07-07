@@ -1,9 +1,9 @@
-import PageTitle from '../../components/PageTitle/PageTitle';
+import css from './HomePage.module.css';
 
 const HomePage = () => {
   return (
-    <div>
-      <PageTitle>PHONEBOOK</PageTitle>
+    <div className={css.container}>
+      <h1 className={css.title}>Phonebook</h1>
     </div>
   );
 };

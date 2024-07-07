@@ -1,1 +1,11 @@
+.container {
+  padding: 5px;
+}
 
+.link {
+  padding: 0 10px;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  color: azure;
+}

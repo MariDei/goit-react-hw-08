@@ -6,6 +6,7 @@ import ContactForm from '../../components/ContactForm/ContactForm';
 import { SearchBox } from '../../components/SearchBox/SearchBox';
 import ContactList from '../../components/ContactList/ContactList';
 import { fetchContacts } from '../../redux/contacts/operations';
+import css from './ContactsPage.module.css';
 
 const ContactsPage = () => {
   const dispatch = useDispatch();
@@ -15,7 +16,7 @@ const ContactsPage = () => {
   }, [dispatch]);
 
   return (
-    <div>
+    <div className={css.container}>
       <PageTitle>Your contacts</PageTitle>
       <Toaster position="top-center" reverseOrder={false} />
       <ContactForm />

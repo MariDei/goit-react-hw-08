@@ -6,6 +6,7 @@ import RestrictedRoute from '../RestrictedRoute/RestrictedRoute';
 import PrivateRoute from '../PrivateRoute/PrivateRoute';
 import { refreshUser } from '../../redux/auth/operations';
 import { selectIsRefreshing } from '../../redux/auth/selectors';
+import css from './App.module.css';
 
 const HomePage = lazy(() => import('../../pages/HomePage/HomePage'));
 const RegistrationPage = lazy(() =>
@@ -28,7 +29,7 @@ function App() {
   }, [dispatch]);
 
   return isRefreshing ? (
-    <div>Refreshing User...</div>
+    <div className={css.container}>Refreshing User...</div>
   ) : (
     <Layout>
       <Suspense fallback={null}>

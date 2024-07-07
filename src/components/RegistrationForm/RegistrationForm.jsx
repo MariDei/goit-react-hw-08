@@ -2,12 +2,12 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { useDispatch } from 'react-redux';
 import * as Yup from 'yup';
 import { register } from '../../redux/auth/operations';
-// import css from './RegistrationForm.module.css';
+import css from './RegistrationForm.module.css';
 
 const contactSchema = Yup.object().shape({
-  name: Yup.string().min(3, 'Name must be longer').required('Required!'),
-  email: Yup.string().email('Invalid email address!').required('Required!'),
-  password: Yup.string().min(7, 'Too Short!').required('Required!'),
+  name: Yup.string().min(3, 'Name must be longer').required('required!'),
+  email: Yup.string().email('Invalid email address!').required('required!'),
+  password: Yup.string().min(7, 'Too Short!').required('required!'),
 });
 
 const RegistrationForm = () => {
@@ -29,24 +29,26 @@ const RegistrationForm = () => {
       onSubmit={handleSubmit}
       validationSchema={contactSchema}
     >
-      <Form autoComplete="off">
-        <label>
+      <Form className={css.form} autoComplete="off">
+        <label className={css.label}>
           Username
-          <Field type="text" name="name" />
+          <Field className={css.input} type="text" name="name" />
           <ErrorMessage name="name" component="span" />
         </label>
-        <label>
+        <label className={css.label}>
           Email
-          <Field type="email" name="email" />
+          <Field className={css.input} type="email" name="email" />
           <ErrorMessage name="email" component="span" />
         </label>
-        <label>
+        <label className={css.label}>
           Password
-          <Field type="password" name="password" />
+          <Field className={css.input} type="password" name="password" />
           <ErrorMessage name="password" component="span" />
         </label>
         <div>
-          <button type="submit">Register</button>
+          <button className={css.btn} type="submit">
+            Register
+          </button>
         </div>
       </Form>
     </Formik>

@@ -1,9 +1,32 @@
 .wrapper {
+  padding: 10px;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
+  color: azure;
 }
 
 .username {
+  font-weight: 900;
+}
+
+.btn {
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 22px;
   font-weight: 700;
+  background-color: gold;
+  color: rgb(74, 72, 72);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:focus,
+.btn:hover {
+  color: green;
+  background-color: inherit;
+  border: 2px solid green;
+  box-shadow: 2px 2px 2px gray;
 }
